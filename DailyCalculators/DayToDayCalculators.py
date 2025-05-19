@@ -20,8 +20,10 @@ def run_calculation():
         print("No kit needed.")
     
     
-
-    print(round(summ + labor + calibration + summ_kit_material ))
+    print(f"Parts: ${parts}", f"\nTax: ${round(part_tax, 2)}", f"\nLabor: ${labor}", 
+          f"\nCalibration: ${calibration}", f"\nKit: ${summ_kit_material}",)
+    print(f"Tota: ${round(summ + labor + calibration + summ_kit_material, 2 )}")
+    
 
 def run_calculation_loop():
     while True:
