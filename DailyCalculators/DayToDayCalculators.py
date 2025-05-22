@@ -1,10 +1,10 @@
 def run_calculation():
-    parts = int(input("Enter the parts amount: "))
+    parts = float(input("\nEnter the parts amount: "))
     profit = parts * .45
-    sum_of_pars_and_profits = parts + profit
+    sum_of_parts_and_profits = parts + profit
     tax = 0.1125
-    part_tax = sum_of_pars_and_profits * tax
-    summ = sum_of_pars_and_profits + part_tax
+    part_tax = sum_of_parts_and_profits * tax
+    summ = sum_of_parts_and_profits + part_tax
     
     kit_material = str(input("Does it need a kit? (y/n): "))
     labor = int(input("Enter the labor: "))
@@ -21,9 +21,9 @@ def run_calculation():
         print("No kit needed.")
     
     
-    print(f"Parts: ${parts}", f"\nTax: ${round(part_tax, 2)}", f"\nKit: ${summ_kit_material}",
+    print(f"\nParts: ${sum_of_parts_and_profits}", f"\nTax: ${round(part_tax, 2)}", f"\nKit: ${summ_kit_material}",
            f"\nLabor: ${labor}", f"\nCalibration: ${calibration}")
-    print(f"Total: ${round(summ + labor + calibration + summ_kit_material, 2 )}")
+    print(f"Total: ${round(summ + labor + calibration + summ_kit_material, 2 )}\n")
     
 
 def run_calculation_loop():
@@ -38,3 +38,6 @@ def run_calculation_loop():
 
 # Run the loop method
 run_calculation_loop()
+
+# When printing the parts it should be the updated price with the profit included
+
