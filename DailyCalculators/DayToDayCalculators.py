@@ -41,3 +41,4 @@ run_calculation_loop()
 
 # When printing the parts it should be the updated price with the profit included
 
+#testing to see if the push and pull works in replit 
